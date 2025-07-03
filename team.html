@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>KidKinder - Kindergarten Website Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link href="css/style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <!-- Navbar Start -->
+  <div id="header"></div>
+  <script>
+    document.head.innerHTML += `<link rel="stylesheet" href="css/style.css">`;
+    window.addEventListener("DOMContentLoaded", () =>
+      fetch("Header.html").then(r => r.text()).then(h => {
+        header.innerHTML = h;
+        document.body.appendChild(Object.assign(document.createElement("script"), { src: "script.js" }));
+      })
+    );
+  </script>
+  <!-- Navbar End -->
+  <!-- Team Start -->
+  <div class="container-fluid pt-5">
+    <div class="container">
+      <div class="text-center pb-2">
+        <p class="section-title px-5">
+          <span class="px-2">Our Teachers</span>
+        </p>
+        <h1 class="mb-4">Meet Our Teachers</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3 text-center team mb-5">
+          <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%">
+            <img class="img-fluid w-100" src="img/team-1.jpg" alt="" />
+
+          </div>
+          <h4>Julia Smith</h4>
+          <i>Music Teacher</i>
+        </div>
+        <div class="col-md-6 col-lg-3 text-center team mb-5">
+          <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%">
+            <img class="img-fluid w-100" src="img/team-2.jpg" alt="" />
+
+          </div>
+          <h4>Jhon Doe</h4>
+          <i>Language Teacher</i>
+        </div>
+        <div class="col-md-6 col-lg-3 text-center team mb-5">
+          <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%">
+            <img class="img-fluid w-100" src="img/team-3.jpg" alt="" />
+
+          </div>
+          <h4>Mollie Ross</h4>
+          <i>Dance Teacher</i>
+        </div>
+        <div class="col-md-6 col-lg-3 text-center team mb-5">
+          <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%">
+            <img class="img-fluid w-100" src="img/team-4.jpg" alt="" />
+
+          </div>
+          <h4>Donald John</h4>
+          <i>Art Teacher</i>
+        </div>
+        <div class="col-md-6 col-lg-3 text-center team mb-5">
+          <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%">
+            <img class="img-fluid w-100" src="img/team-4.jpg" alt="" />
+
+          </div>
+          <h4>Julia Smith</h4>
+          <i>Music Teacher</i>
+        </div>
+        <div class="col-md-6 col-lg-3 text-center team mb-5">
+          <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%">
+            <img class="img-fluid w-100" src="img/team-3.jpg" alt="" />
+
+          </div>
+          <h4>Jhon Doe</h4>
+          <i>Language Teacher</i>
+        </div>
+        <div class="col-md-6 col-lg-3 text-center team mb-5">
+          <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%">
+            <img class="img-fluid w-100" src="img/team-2.jpg" alt="" />
+
+          </div>
+          <h4>Mollie Ross</h4>
+          <i>Dance Teacher</i>
+        </div>
+        <div class="col-md-6 col-lg-3 text-center team mb-5">
+          <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%">
+            <img class="img-fluid w-100" src="img/team-1.jpg" alt="" />
+
+          </div>
+          <h4>Donald John</h4>
+          <i>Art Teacher</i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Team End -->
+  <!-- Footer Start -->
+  <div id="footes"></div>
+  <script>
+    document.head.innerHTML += `<link rel="stylesheet" href="css/style.css">`;
+    window.addEventListener("DOMContentLoaded", () =>
+      fetch("Footer.html").then(r => r.text()).then(h => {
+        footes.innerHTML = h;
+        document.body.appendChild(Object.assign(document.createElement("script"), { src: "script.js" }));
+      })
+    );
+  </script>
+  <!-- Footer End -->
+</body>
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+  <!-- Contact Javascript File -->
+  <script src="mail/jqBootstrapValidation.min.js"></script>
+  <script src="mail/contact.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</html>

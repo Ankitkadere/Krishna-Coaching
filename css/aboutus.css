@@ -1,0 +1,170 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h1, h2 {
+    color: #004aad;
+  }
+  
+  /* Styling for the About Us Section */
+  .about-us {
+    padding: 4rem 2rem;
+    background-color: #fff;
+  }
+  
+  .container {
+    width: 100vw;
+    margin: auto;
+    padding: 0px;
+   
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #004aad;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 2rem;
+  }
+  
+  /* About Content Styling */
+  .about-content {
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+  
+  .about-content p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-content h2 {
+    font-size: 2rem;
+    color: #004aad;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .about-content ul {
+    margin-bottom: 2rem;
+    padding-left: 20px;
+  }
+  
+  .about-content ul li {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .about-content ul li strong {
+    color: #004aad;
+    font-weight: 700;
+  }
+  
+  .about-content ul li span {
+    font-style: italic;
+    color: #777;
+  }
+  
+  /* Highlight Effect for Key Points */
+  ul li strong {
+    color: #004aad;
+    transition: color 0.3s ease;
+  }
+  
+  ul li strong:hover {
+    color: #ff5722;  /* Change to a bright color on hover */
+  }
+  
+  /* Footer and Misc */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #004aad;
+    color: #fff;
+    margin-top: 2rem;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Tablet View (up to 768px) */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2.2rem;
+    }
+  
+    header p {
+      font-size: 1.1rem;
+    }
+  
+    .about-content {
+      text-align: justify;
+    }
+  
+    .about-content h2 {
+      font-size: 1.6rem;
+    }
+  
+    .about-content ul li {
+      font-size: 1rem;
+    }
+  
+    .container {
+      padding: 0 10px;
+    }
+  }
+  
+  /* Mobile View (up to 480px) */
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.8rem;
+    }
+  
+    header p {
+      font-size: 1rem;
+    }
+  
+    .about-content {
+      text-align: center;
+      padding: 0 15px;
+    }
+  
+    .about-content h2 {
+      font-size: 1.4rem;
+    }
+  
+    .about-content ul li {
+      font-size: 0.9rem;
+    }
+  
+    .container {
+      padding: 0 15px;
+    }
+  
+    footer {
+      font-size: 0.9rem;
+    }
+  }
+  
