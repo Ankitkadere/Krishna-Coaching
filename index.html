@@ -13,7 +13,11 @@
   <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
 </head>
-
+<style>
+  body{
+    width: 100vw;
+  }
+</style>
 <body>
   <!-- Navbar Start -->
   <div id="header"></div>
@@ -30,82 +34,48 @@
   <div id="formdesk" target="_self" class="container-fluid bg-primary px-0 px-md-5 mb-5">
     <div class="row align-items-center px-3">
       <div class="col-lg-6 text-center text-lg-left">
-        <h4 class="text-white mb-4 mt-5 mt-lg-0">Kids Learning Center</h4>
-        <div class="getstudent">
-          <div id="inputset">
-            <style>
-              .getstudent {
-                width: auto;
-                background-color: rgb(228, 228, 228);
-                height: auto;
-              }
-
-              #inputset {
-                padding: 4%;
-              }
-
-              input {
-                width: 100%;
-                padding: 0.5%;
-                outline: none;
-              }
-
-              #inputset button {
-                background-color: rgb(83, 188, 230);
-                border-radius: 10%;
-                padding: 1%;
-                width: 50%;
-                box-shadow: 2px 2px 5px;
-                font-weight: 700;
-              }
-
-              label {
-                font-weight: 400;
-                text-align: left;
-              }
-
-              @media screen and (max-width: 768px) {
-                #inputset {
-                  width: 100%;
-                }
-
-                #inputset button {
-                  width: 50%;
-                }
-
-                h2 {
-                  font-size: 1.5rem;
-                }
-
-              }
-
-              @media screen and (max-width: 480px) {
-                h2 {
-                  font-size: 1.2rem;
-                }
-
-                #inputset input,
-                button {
-                  padding: 5px 0px;
-                }
-
-                button {
-                  font-size: 1rem;
-                }
-              }
-            </style>
-            <center>
-              <h2>Get Access To Highe Quality Content</h2>
-            </center>
-            <br>
-            <form action="">
-              <label class="" for="name">Name:</label>
-              <input type="text" id="name" name="name" required=""><br>
-
-              <label for="number">Number:</label>
-              <input type="tel" id="number" name="number" required=""><br>
-              <br><br>
-              <center><button type="submit">Enroll Now</button></center>
+        <div class="w-full">
+          <div class="card border-0 ">
+            <div class="card-header bg-primary text-lg-left  ">
+              <h1 class="text-white m-0">Book A Seat</h1>
+              <h4 class="text-white mb-4 mt-5 mt-lg-0">Student's Learning Center</h4>
+            </div>
+            <div class="card-body rounded-bottom bg-primary  ">
+              <form>
+                <div class="form-group">
+                  <input type="text" class="form-control border-0 p-4" placeholder="Your Full Name" required="required" />
+                </div>
+                <div class="form-group">
+                  <input type="tel" class="form-control border-0 p-4" placeholder="Your Number" required="required" />
+                </div>
+                <div class="form-group">
+                  <select class="custom-select border-0 px-4" style="height: 47px">
+                      <option disabled>Select Your Course</option>
+                      <option value="dca">DCA</option>
+                      <option value="pgdca">PGDCA</option>
+                      <option value="basic_computer">Basic Computer</option>
+                      <option value="english">English</option>
+                      <option value="typing_hi">Typing Hindi</option>
+                      <option value="typing_eng">Typing English</option>
+                      <option value="web_dev">Web Development</option>
+                      <option value="app_dev">App Development</option>
+                      <option value="tally">Tally</option>
+                      <option value="11_art">11th Arts</option>
+                      <option value="11_science">11th Science</option>
+                      <option value="11_commerce">11th Commerce</option>
+                      <option value="12_art">12th Arts</option>
+                      <option value="12_science">12th Science</option>
+                      <option value="12_commerce">12th Commerce</option>
+                    </select>
+                  </select>
+                </div>
+                <div>
+                  <button class="btn btn-secondary btn-block border-0 py-3" type="submit">
+                    Book Now
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
         <p class="text-white mb-4 mt-2">
@@ -261,13 +231,13 @@
             </p>
           </div>
           <div class="card-footer bg-transparent py-4 px-5">
-            <div class="row border-bottom">
+            <div class="row border-bottom justify-between">
               <div class="col-6 py-1 text-right border-right">
                 <strong>Age of Kids</strong>
               </div>
               <div class="col-6 py-1">3 - 6 Years</div>
             </div>
-            <div class="row border-bottom">
+            <div class="row border-bottom justify-between">
               <div class="col-6 py-1 text-right border-right">
                 <strong>Total Seats</strong>
               </div>
@@ -418,10 +388,22 @@
               </div>
               <div class="form-group">
                 <select class="custom-select border-0 px-4" style="height: 47px">
-                  <option selected>Select A Class</option>
-                  <option value="1">Class 1</option>
-                  <option value="2">Class 1</option>
-                  <option value="3">Class 1</option>
+                  <option disabled selected>Select Your Course</option>
+                      <option value="dca">DCA</option>
+                      <option value="pgdca">PGDCA</option>
+                      <option value="basic_computer">Basic Computer</option>
+                      <option value="english">English</option>
+                      <option value="typing_hi">Typing Hindi</option>
+                      <option value="typing_eng">Typing English</option>
+                      <option value="web_dev">Web Development</option>
+                      <option value="app_dev">App Development</option>
+                      <option value="tally">Tally</option>
+                      <option value="11_art">11th Arts</option>
+                      <option value="11_science">11th Science</option>
+                      <option value="11_commerce">11th Commerce</option>
+                      <option value="12_art">12th Arts</option>
+                      <option value="12_science">12th Science</option>
+                      <option value="12_commerce">12th Commerce</option>
                 </select>
               </div>
               <div>
@@ -513,7 +495,7 @@
   </div>
   <!-- Team End -->
 
- 
+
 
   <!-- Blog Start -->
 

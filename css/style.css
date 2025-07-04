@@ -44,6 +44,7 @@
 }
 
 html {
+  width:100vw;
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -64,6 +65,8 @@ section {
 }
 
 body {
+ 
+  width:100vw;
   margin: 0;
   font-family: "Nunito", sans-serif;
   font-size: 1rem;
